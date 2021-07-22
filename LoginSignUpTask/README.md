@@ -7,5 +7,5 @@ Small task that implements a small design UI/UX on behance
 - View Binding
 
 ## Result
-![alt text](https://github.com/ziadabdelnaby10/Android-Tasks/tree/main/LoginSignUpTask/1.png)
+![alt text](https://github.com/ziadabdelnaby10/Android-Tasks/blob/main/LoginSignUpTask/1)
 ![alt text](https://github.com/ziadabdelnaby10/Android-Tasks/tree/main/LoginSignUpTask/2.png)
