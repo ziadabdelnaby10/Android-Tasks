@@ -15,7 +15,7 @@
         android:fontFamily="@font/roboto"
         android:text="@string/signUp"
         android:textColor="@color/white"
-        android:textSize="35sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
@@ -82,7 +82,7 @@
             android:hint="Last Name"
             android:padding="8dp"
             android:textColorHint="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutEmail"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutemail"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +97,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutEmail"
+            android:id="@+id/textInputLayoutemail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="45dp"
@@ -129,13 +129,14 @@
             android:layout_marginEnd="45dp"
             android:background="@drawable/edit_text_shape"
             android:elevation="10dp"
+            android:paddingLeft="8dp"
             android:hint="@string/password"
             android:textColorHint="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/textInputLayoutConfirmPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutemail"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -154,6 +155,7 @@
             android:layout_marginEnd="45dp"
             android:background="@drawable/edit_text_shape"
             android:elevation="10dp"
+            android:paddingLeft="8dp"
             android:hint="Confirm Password"
             android:textColorHint="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/signupBtn"
@@ -179,24 +181,23 @@
             android:layout_marginStart="45dp"
             android:layout_marginEnd="45dp"
             android:backgroundTint="#000"
-            android:text="@string/login"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            android:text="@string/signUp"
+            app:layout_constraintBottom_toTopOf="@+id/signInTxt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutConfirmPassword" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/signInTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have any account? Sign Up"
+            android:text="Already have any Account? Sign In"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signupBtn" />

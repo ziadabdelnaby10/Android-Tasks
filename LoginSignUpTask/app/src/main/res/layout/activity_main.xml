@@ -52,7 +52,7 @@
             android:hint="@string/email"
             android:padding="10dp"
             android:textColorHint="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutPass"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +67,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/textInputLayoutPass"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -78,7 +78,7 @@
             android:hint="@string/password"
             android:padding="6dp"
             android:textColorHint="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+            app:layout_constraintBottom_toTopOf="@+id/loginBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +94,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/appCompatButton"
+            android:id="@+id/loginBtn"
             style="@style/buttonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -102,24 +102,24 @@
             android:layout_marginEnd="24dp"
             android:backgroundTint="#000"
             android:text="@string/login"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintBottom_toTopOf="@+id/signUpTxt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPass" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/signUpTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't have any account? Sign Up"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
