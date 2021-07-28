@@ -8,15 +8,13 @@
         motion:duration="1000">
 
         <OnSwipe
-            motion:dragDirection="dragUp"
+            motion:dragDirection="dragDown"
             motion:dragScale="1"
-            motion:moveWhenScrollAtTop="true"
             motion:onTouchUp="autoCompleteToStart"
             motion:touchAnchorId="@+id/recyclerView"
             motion:touchAnchorSide="top" />
 
     </Transition>
-
     <Transition
         motion:constraintSetEnd="@+id/end2"
         motion:constraintSetStart="@id/start"
@@ -27,8 +25,8 @@
             motion:dragScale="1"
             motion:moveWhenScrollAtTop="true"
             motion:onTouchUp="autoCompleteToStart"
-            motion:touchAnchorId="@+id/imageView"
-            motion:touchAnchorSide="bottom" />
+            motion:touchAnchorId="@+id/recyclerView"
+            motion:touchAnchorSide="top" />
 
     </Transition>
 
